@@ -11,7 +11,7 @@ import 'package:rethink/System/Routes.dart' as route;
 import 'package:rethink/Services/AuthApplicationIdServices.dart';
 import 'package:rethink/Services/GetEntityListServices.dart';
 
-bool urlisValid = false;
+bool urlisValid = true;
 
 Future getQliktagAuth() async{
     await AuthenticationApplicationId().authAplicationId();
@@ -32,9 +32,9 @@ Future getQliktagAuth() async{
   }
   
 
-void main() async {
+void main() {
   setPathUrlStrategy();
-  await getQliktagAuth();
+  //await getQliktagAuth();
   runApp(VxState(store: MyRethink(), child: const MyApp()));
 }
 
