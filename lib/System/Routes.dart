@@ -3,7 +3,7 @@
 class MyRoutes {
   static String id = '0555daf0-0f91-11ec-a929-09b6e71c5bab';
 
-  static String homePageRoute = "/$id";
+  static String homePageRoute = "/home";
   static String splashScreenRoute = "/SplashScreen";
   static String itemInformationRoute = "/$id/ProductInformation";
   static String userManualRoute = "/$id/UserManual";
