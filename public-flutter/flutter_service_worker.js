@@ -3,7 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "4016bba0b957cb6b253b3e5121a54ff6",
+  "404.html": "0a27a4163254fc8fce870c8cc3a3f94f",
+"assets/AssetManifest.json": "4016bba0b957cb6b253b3e5121a54ff6",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/images/Rethink%2520Logo.png": "da879eedb7dffaa18c2bd7650144fb74",
@@ -15,9 +16,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "06ca0c37458667c334bfa9115140da5c",
-"/": "06ca0c37458667c334bfa9115140da5c",
-"main.dart.js": "ee6295084a26420bbb04d23852bc4ecf",
+"index.html": "a4bdcb557df945a0efa1f0bf4a6a3d84",
+"/": "a4bdcb557df945a0efa1f0bf4a6a3d84",
+"main.dart.js": "b04ee5de8e18bc5cc5d79169fd3e1ddb",
 "manifest.json": "d8131092979f1e7e317ea1f974efa5e1",
 "version.json": "8bfe428cce0dd28bb5691b49b89846bd"
 };
