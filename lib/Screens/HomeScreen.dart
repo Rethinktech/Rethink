@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return main.urlisValid
     ? Scaffold(
       appBar: AppBar(
-        title: const Text('Rethink Demo'),
+        title: const Text('Rethink Demo v1'),
       ),
       body: Center(
         child: Container(

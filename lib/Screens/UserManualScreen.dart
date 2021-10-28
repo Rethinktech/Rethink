@@ -16,7 +16,7 @@ class _UserManualState extends State<UserManual> {
   final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
   PdfViewerController controller = PdfViewerController();
   bool isZoom = false;
-  String pdfURL = 'https://www.medicines.org.uk/emc/files/pil.2519.pdf';
+  String pdfURL = 'https://rethinkstorage01.blob.core.windows.net/pdffile/pil.2519.pdf';
 
   @override
   void initState() {
