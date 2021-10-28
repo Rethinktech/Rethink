@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:rethink/System/Routes.dart' as route;
 import 'package:rethink/Model/ItemInformationModel.dart';
+import 'package:rethink/Services/AuthApplicationIdServices.dart';
 
 List<ItemInformationModel> itemInfoList = [];
 String imageURL = '';
@@ -57,6 +58,7 @@ class GetItemInformaionList {
   
   // A function that converts a response body into a List<Photo>.
   Future fetchItemInformationList() async {
+    await AuthenticationApplicationId().authAplicationId();
     SharedPreferences prefs = await SharedPreferences.getInstance();
     authToken = prefs.getString('accessToken').toString();
     final response = await http

@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:rethink/Model/EntityList.dart';
 import 'package:rethink/Model/EntityListModel.dart';
-//import 'package:rethink/Services/AuthApplicationIdServices.dart' as getAplicationIdAuth;
+import 'package:rethink/Services/AuthApplicationIdServices.dart';
 
 List<dynamic> entityList = [];
 
@@ -17,7 +17,7 @@ class GetEntityList {
 
   // A function that converts a response body into a List<Photo>.
   Future fetchEntityList() async {
-    //await getAplicationIdAuth.AuthenticationApplicationId().authAplicationId();
+    await AuthenticationApplicationId().authAplicationId();
     SharedPreferences prefs = await SharedPreferences.getInstance();
     authToken = prefs.getString('accessToken').toString();
     final response = await http

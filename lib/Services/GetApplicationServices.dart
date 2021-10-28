@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:http/http.dart' as http;
+import 'package:rethink/Services/AuthApplicationIdServices.dart';
 
 class GetApplication {
   String applicationURL = 'https://netsecohauz.qliktag.com/api/v2/application';
@@ -8,6 +9,7 @@ class GetApplication {
 
   // A function that converts a response body into a List<Photo>.
   Future fetchApplication() async {
+    await AuthenticationApplicationId().authAplicationId();
     final response = await http
         .get(Uri.parse(applicationURL),
         headers: <String, String>{

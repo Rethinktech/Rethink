@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:rethink/System/Routes.dart' as route;
 import 'package:rethink/Model/TraceabilityModel.dart';
+import 'package:rethink/Services/AuthApplicationIdServices.dart';
 
 List<dynamic> traceabilityList = [];
 
@@ -17,7 +18,7 @@ class GetTraceabilityInformation {
 
   // A function that converts a response body into a List<Photo>.
   Future fetchTraceabilityList() async {
-    //await getAplicationIdAuth.AuthenticationApplicationId().authAplicationId();
+    await AuthenticationApplicationId().authAplicationId();
     SharedPreferences prefs = await SharedPreferences.getInstance();
     authToken = prefs.getString('accessToken').toString();
     final response = await http
