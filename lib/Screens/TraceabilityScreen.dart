@@ -92,7 +92,7 @@ class _TracebilityScreenState extends State<TraceabilityScreen> {
                                   children: [
                                     Container(
                                       margin: const EdgeInsets.all(5),
-                                      child: const Text('Nets Eco Hauz Sdn. Bhd.'),
+                                      child: const Text('Nets Ecohauz Sdn Bhd'),
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

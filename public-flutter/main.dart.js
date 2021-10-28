@@ -70480,7 +70480,7 @@ $2(a,b){var s=null
 return M.ak(C.BZ,C.HX,C.i,s,s,s,s,s,C.Hb,s,s,s,s)},
 $S:419}
 L.alS.prototype={
-$2(a,b){var s=null,r="LocationName",q=M.ak(C.mv,L.aI("24 October 2021",s,s,s,A.aJ(s,s,C.k,s,s,s,s,s,s,s,s,12,s,C.o,s,s,!0,s,s,s,s,s,s,s,s),s,s),C.i,s,s,s,s,s,C.Hd,s,s,s,s),p=M.ak(s,L.a3L(this.a.a56(b,J.r(J.r($.Yl,b),r)),s,s,s),C.i,s,s,s,s,s,C.fZ,s,s,s,s),o=M.ak(s,C.TU,C.i,s,s,s,s,s,C.fZ,s,s,s,s),n=this.b,m=t.w,l=n.ae(m).f
+$2(a,b){var s=null,r="LocationName",q=M.ak(C.mv,L.aI("24 October 2021",s,s,s,A.aJ(s,s,C.k,s,s,s,s,s,s,s,s,12,s,C.o,s,s,!0,s,s,s,s,s,s,s,s),s,s),C.i,s,s,s,s,s,C.Hd,s,s,s,s),p=M.ak(s,L.a3L(this.a.a56(b,J.r(J.r($.Yl,b),r)),s,s,s),C.i,s,s,s,s,s,C.fZ,s,s,s,s),o=M.ak(s,C.TT,C.i,s,s,s,s,s,C.fZ,s,s,s,s),n=this.b,m=t.w,l=n.ae(m).f
 l=M.ak(s,L.aI(J.r(J.r($.Yl,b),r),s,s,s,s,s,s),C.i,s,s,s,s,s,C.fZ,s,s,s,l.a.a/2)
 m=n.ae(m).f
 n=t.p
@@ -70490,7 +70490,7 @@ Z.Cu.prototype={
 aT(){return new Z.WJ(new N.b9(null,t.Wc),X.aIR(),C.m)}}
 Z.WJ.prototype={
 bz(){this.ca()},
-a7(a,b){var s=this,r=null,q=E.Z_(!0,C.TP),p=M.ak(r,new D.J4(new Z.am0(s),r,r,C.i,r,!1,C.TT,r),C.i,r,r,r,r,r,C.ef,r,r,r,r),o=new N.a6j()
+a7(a,b){var s=this,r=null,q=E.Z_(!0,C.TP),p=M.ak(r,new D.J4(new Z.am0(s),r,r,C.i,r,!1,C.TU,r),C.i,r,r,r,r,r,C.ef,r,r,r,r),o=new N.a6j()
 o.a=u.J
 o=T.hQ(H.c([p,T.Jj(new X.Bu(o,1,s.e,!0,s.d))],t.p),C.al,r,C.a5,C.a6)
 p=s.f?C.HZ:C.I_
@@ -105584,8 +105584,8 @@ C.TO=new L.jk("Product Information",null,null,null,null,null,null,null)
 C.TP=new L.jk("User Manual",null,null,null,null,null,null,null)
 C.TQ=new L.jk("Traceability",null,null,null,null,null,null,null)
 C.TS=new L.jk("Rethink Demo v1",null,null,null,null,null,null,null)
-C.TT=new L.jk("Download User Manual (PDF)",null,null,null,null,null,null,null)
-C.TU=new L.jk("Nets Eco Hauz Sdn. Bhd.",null,null,null,null,null,null,null)
+C.TT=new L.jk("Nets Ecohauz Sdn Bhd",null,null,null,null,null,null,null)
+C.TU=new L.jk("Download User Manual (PDF)",null,null,null,null,null,null,null)
 C.ZX=new S.aeo("ThemeMode.system")
 C.TV=new M.Cg(null)
 C.f6=new P.uJ(0,"TileMode.clamp")
