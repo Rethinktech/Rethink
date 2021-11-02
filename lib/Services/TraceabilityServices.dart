@@ -3,7 +3,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:rethink/System/Routes.dart' as route;
+import 'package:rethink/System/AppRoutes.dart' as route;
 import 'package:rethink/Model/TraceabilityModel.dart';
 import 'package:rethink/Services/AuthApplicationIdServices.dart';
 
@@ -11,7 +11,7 @@ List<dynamic> traceabilityList = [];
 
 class GetTraceabilityInformation {
   String baseURL = 'https://netsecohauz.qliktag.com/api/v2/entity/rethinkpharmaceuticaldemo/';
-  String itemID = route.MyRoutes.id;
+  String itemID = route.id;
   String authToken = '';
 
   

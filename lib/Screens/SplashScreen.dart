@@ -5,6 +5,9 @@ import 'package:rethink/Services/AuthApplicationIdServices.dart';
 import 'package:rethink/System/Routes.dart' as route;
 import 'package:velocity_x/velocity_x.dart';
 import 'package:rethink/main.dart' as main;
+import 'package:rethink/Services/GetEntityListServices.dart'; 
+import 'package:rethink/System/Routes.dart';
+import 'package:qlevar_router/qlevar_router.dart';
 
 class SplahScreen extends StatefulWidget {
   const SplahScreen({ Key? key }) : super(key: key);
@@ -15,21 +18,25 @@ class SplahScreen extends StatefulWidget {
 
 class SplahScreenState extends State<SplahScreen> {
 
+  bool checkUrl = false;
+  bool urlisValid = false;
 
-  void getQliktagAuth() async{
+  Future getQliktagAuth() async{
     await AuthenticationApplicationId().authAplicationId();
-    route.MyRoutes.id = 'abc124';
-    print(route.MyRoutes.id);
-    print(route.MyRoutes.homePageRoute);
-    if(route.MyRoutes.id != '')
+    await GetEntityList().fetchEntityList();
+    String currentURL = Uri.base.toString();
+    List<String> cutText = currentURL.split("/");
+    route.MyRoutes.id = cutText[3];
+    bool exists = entityList.any((file) => file.rethinkpharmaceuticaldemoId == route.MyRoutes.id);
+    if(exists == true)
     {
-      print('success: id found ${route.MyRoutes.id}');
-      context.vxNav.push(Uri.parse(route.MyRoutes.homePageRoute));
-      print('Navigate to home page');
+      QR.to(route.MyRoutes.id);
+      urlisValid = true;
     }
-    else
+    else if (exists == false)
     {
-      print('Error: id not found ${route.MyRoutes.id}');
+      QR.to('404');
+      urlisValid = false;
     }
     
   }
@@ -37,7 +44,15 @@ class SplahScreenState extends State<SplahScreen> {
   @override
   void initState() {
     super.initState();
-    getQliktagAuth();
+    
+    Future.delayed(Duration.zero,()async {
+    await getQliktagAuth();
+     if (checkUrl == false)
+      {
+        
+        checkUrl = true;
+      }
+   });
   }
 
   @override
