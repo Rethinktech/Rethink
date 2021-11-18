@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:qlevar_router/qlevar_router.dart';
 import 'package:rethink/System/AppRoutes.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main(){
+void main() {
   QR.setUrlStrategy();
   runApp(const MyApp());
 }

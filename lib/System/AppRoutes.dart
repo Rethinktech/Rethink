@@ -3,12 +3,16 @@
 import 'package:qlevar_router/qlevar_router.dart';
 import 'package:rethink/Screens/HomeScreen.dart';
 import 'package:rethink/Screens/ItemInfoScreen.dart';
+import 'package:rethink/Screens/SignInScreen.dart';
 import 'package:rethink/Screens/UserManualScreen.dart';
 import 'package:rethink/Screens/TraceabilityScreen.dart';
+import 'package:rethink/Screens/UserProfileScreen.dart';
 
-String id = '';
+
 
 class AppRoutes {
+  // 0555daf0-0f91-11ec-a929-09b6e71c5bab
+  static String itemID = '';
   /* static const nested = 'Nested';
   static const nestedChild = 'Nested Child';
   static const nestedChild1 = 'Nested Child 1';
@@ -25,6 +29,8 @@ class AppRoutes {
   static String userManual = 'UserManual';
   static String traceability = 'Traceability';
   static String eStore = 'Estore';
+  static String signIn = 'SignIn';
+  static String userProfile = 'UserProfile';
 
   List<QRoute> routes() => [
     //QRoute(path: '/', builder: () => const SplahScreen()),
@@ -57,6 +63,16 @@ class AppRoutes {
         path: '/ + $eStore',
         pageType: const QFadePage(),
         builder: () => const ItemInfoScreen()),
+    QRoute(
+        name: signIn ,
+        path: '/SignIn',
+        pageType: const QFadePage(),
+        builder: () => const SignInScreen()),
+     QRoute(
+        name: userProfile ,
+        path: '/UserProfile',
+        pageType: const QFadePage(),
+        builder: () => const UserProfileScreen()),
     /* QRoute(
         path: '/:id',
         pageType: const QFadePage(),

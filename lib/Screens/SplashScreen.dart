@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:rethink/Services/AuthApplicationIdServices.dart';
 import 'package:rethink/System/Routes.dart' as route;
-import 'package:velocity_x/velocity_x.dart';
 import 'package:rethink/main.dart' as main;
 import 'package:rethink/Services/GetEntityListServices.dart'; 
 import 'package:rethink/System/Routes.dart';

@@ -11,7 +11,7 @@ List<dynamic> traceabilityList = [];
 
 class GetTraceabilityInformation {
   String baseURL = 'https://netsecohauz.qliktag.com/api/v2/entity/rethinkpharmaceuticaldemo/';
-  String itemID = route.id;
+  String itemID = route.AppRoutes.itemID;
   String authToken = '';
 
   
@@ -24,7 +24,7 @@ class GetTraceabilityInformation {
     final response = await http
         .get(Uri.parse(baseURL + itemID),
         headers: <String, String>{
-          'Authorization': 'Bearer ' + authToken,
+          'Authorization': 'Bearer ' + authToken,/*  */
           'Content-Type': 'application/json',
         },
       );

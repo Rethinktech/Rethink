@@ -26,6 +26,8 @@
   <meta name="apple-mobile-web-app-title" content="rethink">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
+  <meta name="google-signin-client_id" content="328402496007-q5gg979lofr29bbm9ore6m6et0bnv691.apps.googleusercontent.com">
+
   <title>rethink</title>
   <link rel="manifest" href="manifest.json">
 </head>
@@ -33,6 +35,23 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <!-- Firebase Configuration -->
+  <script>
+    var firebaseConfig = {
+      apiKey: "...",
+      authDomain: "rethink-d714d.firebaseapp.com",
+      databaseURL: "https://rethink-d714d.firebaseio.com",
+      projectId: "rethink-d714d",
+      storageBucket: "rethink-d714d.appspot.com",
+      messagingSenderId: "...",
+      appId: "1:...:web:...",
+      measurementId: "G-...",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
   <script type="text/javascript">
     pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js";

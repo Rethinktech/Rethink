@@ -54,7 +54,7 @@ String medicalAuthorityLicense = '';
 
 class GetItemInformaionList {
   String baseURL = 'https://netsecohauz.qliktag.com/api/v2/entity/rethinkpharmaceuticaldemo/';
-  String itemID = route.id;
+  String itemID = route.AppRoutes.itemID;
   String authToken = '';
   
   // A function that converts a response body into a List<Photo>.
